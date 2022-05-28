@@ -1,0 +1,12 @@
+export { default as About }                 from "./Sections/About";
+export { default as Contact }               from "./Sections/Contact";
+export { default as DocumentHead }          from "./DocumentHead";
+export { default as Footer }                from "./Footer";
+export { default as Header }                from "./Header/Header";
+export { default as Layout }                from "./Layout";
+export { default as Landing }               from "./Sections/Landing";
+export { default as Loader }                from "./Loader";
+export { default as NumberedHeading }       from "./NumberedHeading";
+export { default as Featured }              from "./Sections/Featured";
+export { default as Section }               from "./Sections/Section";
+export { default as SocialsList }           from "./SocialsList";
