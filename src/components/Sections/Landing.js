@@ -11,7 +11,7 @@ import {    landingPageContainerVariants,
 const StyledSection = styled(Section)`
     font-weight: normal;
     transition: all 1000ms ease-in-out;
-    
+
     .container {
         ${mixins.sectionContentContainer};
         ${mixins.flexCol};
@@ -23,8 +23,8 @@ const StyledSection = styled(Section)`
         color: var(--fg-highlight);
         font-family: var(--font-mono);
         font-size: clamp(var(--ft-sm), 5vw, var(--ft-lg));
-        font-weight: 400; 
-        margin-bottom: .5rem; 
+        font-weight: 400;
+        margin-bottom: .5rem;
     }
 
     h2, h3 {
@@ -84,12 +84,12 @@ const Landing = ({viewportHeight}) => {
         </motion.p>),
         (<motion.div
             {...itemProps}>
-            <Link>View My Projects</Link>
+            <Link to={"/#projects"}>View My Projects</Link>
         </motion.div>)
     ];
 
     return (
-        <StyledSection 
+        <StyledSection
             id="landing"
             viewportHeight={viewportHeight}>
 
@@ -108,7 +108,7 @@ const Landing = ({viewportHeight}) => {
                         ))
                     }
                 </motion.div>
-                
+
         </StyledSection>
     );
 };
