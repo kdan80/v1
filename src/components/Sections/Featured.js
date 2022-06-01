@@ -78,7 +78,7 @@ const Project = styled(motion.li)`
                 }
             }
         }
-        
+
         .project-links {
             justify-content: flex-end;
 
@@ -88,7 +88,7 @@ const Project = styled(motion.li)`
                 margin-right: 0;
             }
         }
-    
+
         .project-image {
             grid-column: 1 / 8;
 
@@ -130,7 +130,7 @@ const Project = styled(motion.li)`
     }
 
     .project-title {
-        
+
         color: var(--fg-main-light);
         font-weight: 600;
         font-size: clamp(1rem, 5vw, 1.6rem);
@@ -302,7 +302,7 @@ const Project = styled(motion.li)`
                 bottom: 0;
                 z-index: var(--layer-3);
                 mix-blend-mode: screen;
-            } 
+            }
         }
 
         .img {
@@ -344,7 +344,7 @@ const Featured = ({viewportHeight}) => {
                         title
                         cover {
                             childImageSharp {
-                                gatsbyImageData(width: 720, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                                gatsbyImageData(width: 720, placeholder: BLURRED, formats: [AUTO, WEBP])
                             }
                         }
                         tech
@@ -362,7 +362,7 @@ const Featured = ({viewportHeight}) => {
 
     return (
 
-        <StyledSection 
+        <StyledSection
             id="projects"
             viewportHeight={viewportHeight}>
             <motion.div className="container">
