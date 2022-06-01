@@ -406,12 +406,12 @@ const Featured = ({viewportHeight}) => {
 
                                             <div className="project-links">
                                                 {github && (
-                                                    <a href={github} aria-label="GitHub Link">
+                                                    <a href={github} aria-label="GitHub Link" target="_blank">
                                                         <Github />
                                                     </a>
                                                 )}
                                                 {external && (
-                                                    <a href={external} aria-label="External Link">
+                                                    <a href={external} aria-label="External Link" target="_blank">
                                                         <External />
                                                     </a>
                                                 )}
@@ -421,7 +421,7 @@ const Featured = ({viewportHeight}) => {
                                     </div>
 
                                     <div className="project-image">
-                                        <a href={external ? external : github ? github : '#'}>
+                                        <a href={external ? external : github ? github : '#'} target="_blank">
                                             <GatsbyImage image={image} alt={title} className="img" />
                                         </a>
                                     </div>
