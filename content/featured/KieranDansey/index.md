@@ -2,8 +2,8 @@
 date: '4'
 title: 'kierandansey.co.uk'
 cover: './kierandansey.webp'
-github: 'https://github.com'
-external: 'https://bbc.co.uk'
+github: 'https://github.com/kdan80/v1'
+external: 'https://www.kierandansey.co.uk'
 tech:
   - Gatsby
   - Graphql
