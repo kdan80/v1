@@ -55,6 +55,7 @@ const variables = css`
         --layer-1   : 1;
         --layer-2   : 10;
         --layer-3   : 100;
+        --layer-4   : 1000;
 
         // Break points
         --bp-sm     : 768px;

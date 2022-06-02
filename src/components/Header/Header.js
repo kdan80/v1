@@ -19,7 +19,7 @@ const StyledHeader = styled(motion.header)`
     padding: 0 var(--pd-win-sm);
     font-size: var(--ft-lg);
     color: var(--fg-main);
-    z-index: var(--layer-2); 
+    z-index: var(--layer-3); 
     height: var(--header-height);
     transition: transform 300ms ease-in-out;
 
