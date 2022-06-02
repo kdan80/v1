@@ -46,7 +46,7 @@ const Layout = ({children, location}) => {
                 <div className="background" />
                 {
                     isLoading && isHome
-                        //&& false
+                        && false
                         ?   <Loader 
                                 finishLoading={() => setIsLoading(false)} 
                                 viewportHeight={viewportHeight} />

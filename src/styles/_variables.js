@@ -9,7 +9,6 @@ const variables = css`
         --bg-main-light         : #26272a;
         --bg-main-lighter       : #303135;
         --bg-main-dark          : #151618;
-        --bg-dropdown           : rgba(48, 49, 54,.6);
         --pink                  : #f57dff;
         --slate-dark            : #495670;
         
@@ -23,6 +22,7 @@ const variables = css`
         --scrollbar-fill        : #394044;
         --scrollbar-fill-hover  : #596064;
         --dropmenu-fill         : #27282a;
+        --dropmenu-fill-alpha   : rgba(48, 49, 54,.6);
         --icon-fill             : #899094;
         --icon-fill-hover       : #0e8a7a;                               
         

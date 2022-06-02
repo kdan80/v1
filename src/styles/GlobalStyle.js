@@ -26,19 +26,16 @@ const GlobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
     }
-    
+
     body {
+        overflow: overlay;
+        overflow-x: hidden;
         font-size: 16px;
         font-family: var(--font-sans);  
 
         &.disable-scroll {
-            position: fixed;
+            overflow: hidden;
         }
-    }
-
-    html, body {
-        overflow-x: hidden;
-        overflow: overlay;
     }
 
     /* Scrollbar Styles */

@@ -17,7 +17,7 @@ const StyledNav = styled.nav`
     transition: transform 300ms ease-in-out;
 
     @supports (backdrop-filter: blur()){
-        background-color: var(--bg-dropdown);
+        background-color: var(--dropmenu-fill-alpha);
         backdrop-filter: blur(16px);
     }
 

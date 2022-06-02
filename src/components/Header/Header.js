@@ -21,7 +21,7 @@ const StyledHeader = styled(motion.header)`
     color: var(--fg-main);
     z-index: var(--layer-2); 
     height: var(--header-height);
-    transition: all 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 
     ${({scrolledToTop, scrollDirection}) => 
             !scrolledToTop && 
@@ -42,6 +42,11 @@ const StyledHeader = styled(motion.header)`
                 @supports (backdrop-filter: blur()){
                     background-color: transparent;
                 }
+    `}
+
+    ${({dropdownIsOpen}) => dropdownIsOpen && css`
+            background-color: transparent;
+            backdrop-filter: none;
     `}
 
     .container {
@@ -76,6 +81,7 @@ const Header = ({scrollDirection, scrolledToTop}) => {
 
     return (
         <StyledHeader
+            dropdownIsOpen={dropdownIsOpen}
             scrollDirection={scrollDirection}
             scrolledToTop={scrolledToTop}>
             <Helmet>
