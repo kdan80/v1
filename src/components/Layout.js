@@ -9,7 +9,7 @@ import { useViewportHeight, useScrollDirection, useScrolledToTop } from "@hooks"
 const App = styled.div`
     ${mixins.flexCenter};
     min-height: 100%;
-    
+
     .background {
         height: 100vh;
         width: 100%;
@@ -19,7 +19,7 @@ const App = styled.div`
         z-index: -1;
         background: url("/background.webp");
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
     }
 `;
 
@@ -46,9 +46,9 @@ const Layout = ({children, location}) => {
                 <div className="background" />
                 {
                     isLoading && isHome
-                        && false
-                        ?   <Loader 
-                                finishLoading={() => setIsLoading(false)} 
+                        //&& false
+                        ?   <Loader
+                                finishLoading={() => setIsLoading(false)}
                                 viewportHeight={viewportHeight} />
                         :   is404
                                 ?   <MainContent>
@@ -56,23 +56,23 @@ const Layout = ({children, location}) => {
                                             {children}
                                         </Section>
                                     </MainContent>
-                                :   
+                                :
                                     <>
-                                        <Header 
-                                            scrollDirection={scrollDirection} 
+                                        <Header
+                                            scrollDirection={scrollDirection}
                                             scrolledToTop={scrolledToTop}/>
                                         <MainContent>
                                             {
                                                 children.map(child => (
                                                     React.cloneElement(child, {viewportHeight: viewportHeight})
                                                 ))
-                                            } 
-                                            <Footer /> 
+                                            }
+                                            <Footer />
                                         </MainContent>
                                         <SocialsList scrolledToTop={scrolledToTop} />
                                     </>
                 }
-            </App> 
+            </App>
         </>
     );
 };
