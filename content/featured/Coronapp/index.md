@@ -11,5 +11,5 @@ tech:
   - Restful API
 ---
 
-An app that leverages the gov.uk coronavirus api to display coronavirus data for Scotland. It uses custom SVG maps of Scottish counties that are mapped to react compnents.
+An app that leverages the gov.uk coronavirus api to display coronavirus data for Scotland. It uses custom SVG maps of Scottish counties that are mapped to react components.
 
