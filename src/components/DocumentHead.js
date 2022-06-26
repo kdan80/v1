@@ -17,13 +17,13 @@ const DocumentHead = ({ title, description, image }) => {
                     defaultDescription: description
                     siteUrl
                     defaultImage: image
-                    
+
                     }
                 }
             }
         `,
     );
-    
+
     const {
       defaultTitle,
       defaultDescription,
@@ -55,8 +55,6 @@ const DocumentHead = ({ title, description, image }) => {
             <meta name="twitter:title" content={siteMetadata.title} />
             <meta name="twitter:description" content={siteMetadata.description} />
             <meta name="twitter:image" content={siteMetadata.image} />
-
-            <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
         </Helmet>
     );
 };
@@ -68,7 +66,7 @@ DocumentHead.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
 };
-  
+
 DocumentHead.defaultProps = {
     title: null,
     description: null,
